@@ -7,7 +7,7 @@ Vagrant.configure("2") do |config|
   # For a complete reference, please see the online documentation at
   # https://docs.vagrantup.com.
 
-  config.vm.box = "debian/stretch64"
+  config.vm.box = "ubuntu/zesty64"
   config.vm.hostname = "elastic"
   config.vm.network "forwarded_port", guest: 9200, host: 9200
   config.vm.network "private_network", ip: "192.168.56.10"
